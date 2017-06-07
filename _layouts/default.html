@@ -1,32 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset=utf-8 />
-  <title> {% if page.title %} {{ page.title }} | {% endif %} Lackland CGOC </title>
-  <link rel="stylesheet" href="/css/styles.css" />
-</head>
+{% include header.html %}
 <body>
- 
-  <div id="main">
- 
-    <header>
-      <h1> Lackland CGOC </h1>
-    <header>
- 
-    <nav role="navigation">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
- 
-    {{ content }}
- 
-    <footer>
-      <p> Lackland CGOC  </p>
-    </footer>
- 
-  </div>
+
+  {% include navbar.html %}
+	
+	<!--Main Container Div-->
+  {{ content }}
+
 </body>
 </html>
